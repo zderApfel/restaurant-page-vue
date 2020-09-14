@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/menu">Menu</router-link>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+        <router-link to="/menu">Menu</router-link>
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
@@ -25,14 +25,31 @@ html{
 
 #nav {
   padding: 30px;
+  text-align: center;
+  background-color: lightblue; 
 }
 
 #nav a {
+  margin: 30px;
+  padding: 10px;
+  background-color: white;
+  border-style: outset;
+  border-color: lightblue;
   font-weight: bold;
   color: #2c3e50;
 }
 
+#nav a:hover {
+  background-color: lightcoral;
+}
+
+#nav a:active{
+  border-style: inset;
+}
+
 #nav a.router-link-exact-active {
+  background-color: lightcoral;
+  border-style: inset;
   color: #42b983;
 }
 </style>
