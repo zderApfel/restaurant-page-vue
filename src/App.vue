@@ -3,8 +3,9 @@
     <div id="nav">
         <router-link to="/menu">Menu</router-link>
         <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link to="/contact">Contact Us</router-link>
     </div>
+    <img alt="Juicy Borgers" src="./assets/borgers.jpg">
     <router-view/>
   </div>
 </template>
@@ -14,6 +15,12 @@
 
 html{
   background-color: #d0d65c;
+}
+
+img{
+  height: 200px;
+  width: 500px;
+  padding-top: 20px;
 }
 
 #app {
@@ -50,6 +57,6 @@ html{
 #nav a.router-link-exact-active {
   background-color: lightcoral;
   border-style: inset;
-  color: #42b983;
+  color: black;
 }
 </style>

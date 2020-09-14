@@ -1,12 +1,17 @@
 <template>
     <div class="menu">
-        <h1>Menu page</h1>
+        <MenuContent msg="Menu"/>
     </div>
 </template>
 
 <script>
+import MenuContent from "@/components/MenuContent.vue"
+
 export default {
-    
+    name: "Menu",
+    components:{
+        MenuContent
+    }
 }
 </script>
 
